@@ -1,4 +1,5 @@
 import * as React from "react";
+import { HighlighCard } from "../../components/HighlighCard";
 import {
   Container,
   Header,
@@ -8,7 +9,8 @@ import {
   UserGreeting,
   UserName,
   UserWrepper,
-  Icon
+  Icon,
+  HighlighCards
 } from "./styles";
 
 export function Dashboard() {
@@ -26,6 +28,12 @@ export function Dashboard() {
           <Icon name="power" />
         </UserWrepper>
       </Header>
+
+      <HighlighCards>
+        <HighlighCard />
+        <HighlighCard />
+        <HighlighCard />
+      </HighlighCards>
     </Container>
   );
 }
